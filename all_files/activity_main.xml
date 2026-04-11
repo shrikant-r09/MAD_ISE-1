@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="5mm"
+            android:background="?attr/colorAccent"
+            app:title="MAD Project Dashboard"
+            app:titleTextColor="@android:color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:padding="8dp"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false">
+
+            <!-- Background Color Change -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_bgclr"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="BG Color\nChange"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                app:shapeAppearanceOverlay="@style/ShapeAppearance.MaterialComponents.MediumComponent" />
+
+            <!-- Calculator -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_calculator"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Calculator"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- ConstraintLayout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_constraint"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Constraint\nLayout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- Explicit Resume -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_explicit_resume"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Explicit\nResume"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- FrameLayout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_frame"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Frame\nLayout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- GridLayout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_grid"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Grid\nLayout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- Rating -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_rating"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Rating"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- Implicit -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_implicit"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Implicit\nIntent"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- LinearLayout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_linear"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Linear\nLayout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- Relative layout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_relative"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Relative\nLayout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- Resume -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_resume"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Resume"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+            <!-- TableLayout -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_table"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:layout_gravity="fill"
+                android:backgroundTint="@android:color/white"
+                android:text="Table\nLayout"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:gravity="center" />
+
+        </GridLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
