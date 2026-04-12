@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:id="@+id/main">
+
+    <!-- Profile Header -->
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/my_profile_picture"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_alignTop="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="Shrikant Rathod"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_toEndOf="@id/profile_image"
+        android:layout_marginStart="16dp"
+        android:text="Android Developer"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <!-- About Me Section -->
+    <TextView
+        android:id="@+id/about_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginTop="32dp"
+        android:text="About Me"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_label"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="4dp"
+        android:text="Passionate Android developer with a knack for building clean, user-friendly mobile applications. I love turning complex problems into simple, beautiful, and intuitive designs."
+        android:textSize="15sp" />
+
+    <!-- Skills Section -->
+    <TextView
+        android:id="@+id/skills_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/about_text"
+        android:layout_marginTop="24dp"
+        android:text="Skills"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/skills_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/skills_label"
+        android:layout_marginTop="8dp"
+        android:text="• Java &amp; Kotlin\n• Android SDK &amp; Jetpack Compose\n• SQLite &amp; Firebase\n• Git &amp; Version Control\n• UI/UX Design Principles"
+        android:textSize="15sp"
+        android:lineSpacingExtra="4dp"/>
+
+    <!-- Contact Button at Bottom -->
+    <Button
+        android:id="@+id/btn_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:text="Contact Me"
+        android:backgroundTint="@color/material_dynamic_neutral30"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
