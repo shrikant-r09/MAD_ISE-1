@@ -1,0 +1,46 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp"
+    android:stretchColumns="1"
+    android:id="@+id/main">
+
+    <TableRow android:padding="8dp">
+    <TextView
+        android:text="Name:"
+        android:textStyle="bold" />
+    <EditText
+        android:hint="Enter Name" />
+    </TableRow>
+
+    <TableRow android:padding="8dp">
+        <TextView
+            android:text="Email:"
+            android:textStyle="bold" />
+        <EditText
+            android:hint="Enter Email" />
+    </TableRow>
+
+    <TableRow android:padding="8dp">
+        <TextView
+            android:text="Mobile No. :"
+            android:textStyle="bold" />
+        <EditText
+            android:hint="Contact Number" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:layout_width="337dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_span="2"
+            android:text="Save Data" />
+    </TableRow>
+
+    <View
+        android:layout_height="3dp"
+        android:background="#CCCCCC" />
+</TableLayout>
